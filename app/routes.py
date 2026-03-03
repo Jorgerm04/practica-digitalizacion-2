@@ -13,7 +13,7 @@ def index():
 
 @api.route("/api/notes", methods=["GET"])
 def list_notes():
-    """Devuelve todas las notas."""
+    """Devuelve todas las notas"""
     return jsonify(store.list_all())
 
 
