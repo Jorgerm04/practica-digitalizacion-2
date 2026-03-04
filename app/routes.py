@@ -19,7 +19,7 @@ def list_notes():
 
 @api.route("/api/notes/<int:note_id>", methods=["GET"])
 def get_note(note_id):
-    """Devuelve una nota por su id."""
+    """Devuelve una nota por su id"""
     note = store.get(note_id)
     if note is None:
         return jsonify({"error": "Nota no encontrada"}), 404
